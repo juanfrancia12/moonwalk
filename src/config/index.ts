@@ -11,6 +11,7 @@ export default {
 
 export const SECRET_KEY = process.env.NODE_SECRET_KEY;
 export const expiresIn = process.env.NODE_EXPIRES_IN;
+export const JWT_ROUNDS = process.env.NODE_JWT_ROUNDS;
 
 export const ID_ROLE_GENERAL = process.env.NODE_ID_ROLE_GENERAL;
 export const ID_ROLE_ADMIN = process.env.NODE_ID_ROLE_ADMIN;

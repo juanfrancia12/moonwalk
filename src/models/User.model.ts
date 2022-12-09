@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../database";
 import { ReserveModel } from "./Reserve.model";
 
-export const UserModel = sequelize.define(
+export const UserModel: any = sequelize.define(
   "user",
   {
     id: {

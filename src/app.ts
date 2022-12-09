@@ -6,6 +6,7 @@ import config from "./config";
 import usersRoutes from "./routes/users.routes";
 import foodsRoutes from "./routes/foods.routes";
 import reservesRoutes from "./routes/reserves.routes";
+import authRoutes from "./routes/auth.routes";
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Routes
+app.use("/api", authRoutes);
 app.use("/api/users", usersRoutes);
 app.use("/api/foods", foodsRoutes);
 app.use("/api/reserves", reservesRoutes);
